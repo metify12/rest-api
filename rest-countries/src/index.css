@@ -3,10 +3,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-body {
   font-family: "Nunito sans", sans-serif;
 }
-img {
-  max-width: 100%;
+
+:root {
+  --bg-elements-color: hsl(209, 23%, 22%);
+  --bg-color: hsl(207, 26%, 17%);
+  --text-color: hsl(0, 0%, 100%);
+}
+
+.light-mode {
+  --bg-elements-color: hsl(0, 0%, 100%);
+  --bg-color: hsl(0, 0%, 98%);
+  --text-color: hsl(200, 15%, 8%);
+}
+
+.bg-elements {
+  background-color: var(--bg-elements-color);
+}
+
+.custom-text-white {
+  color: var(--text-color);
 }
